@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Computer Selection</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="step step-1 active">
+	<div class="container">
+		<h1 class="title">Виберіть бюджет</h1>
+		<div class="content">
+			<div class="select-steps">
+				<a class="select-steps__item select-steps__item--active" href="#">Крок 1</a>
+				<a class="select-steps__item" href="#">Крок 2</a>
+				<a class="select-steps__item" href="#">Крок 3</a>
+				<a class="select-steps__item" href="#">Крок 4</a>
+				<a class="select-steps__item" href="#">Результат</a>		
+			</div>
+			<div class="budget-wrapper">
+				<label>
+					<select name="budget">
+						<option>до 10.000 грн</option>
+						<option>до 20.000 грн</option>
+						<option>20.000 грн +</option>
+					</select>
+				</label>	
+			</div>
+		</div>	
+		<div class="buttons">
+			<a class="button button-next" href="#">Наступний крок</a>	
+		</div>
+	</div>
+</section>
+
+<section class="step step-2">
+	<div class="container">
+		<h1 class="title">Виберіть тип комп'ютера</h1>
+		<div class="content">
+			<div class="select-steps">
+				<a class="select-steps__item" href="#">Крок 1</a>
+				<a class="select-steps__item select-steps__item--active" href="#">Крок 2</a>
+				<a class="select-steps__item" href="#">Крок 3</a>
+				<a class="select-steps__item" href="#">Крок 4</a>	
+				<a class="select-steps__item" href="#">Результат</a>	
+			</div>
+			<div class="select-images">
+				<div class="select-images__inner active">
+					<div class="select-images__inner-item">
+						<label>
+							<span class="value">Ноутбук</span>
+							<input type="radio" name="computer" value="Ноутбук" checked>
+							<img src="images/nout.jpg" alt="nout">
+						</label>	
+					</div>
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">ПК</span>
+						<input type="radio" name="computer" value="ПК">
+						<img src="images/pc.jpg" alt="pc">
+					</label>
+					</div>	
+				</div>	
+			</div>	
+		</div>	
+		<div class="buttons">
+			<a class="button button-prev" href="#">Попередній крок</a>
+			<a class="button button-next" href="#">Наступний крок</a>	
+		</div>
+	</div>
+</section>
+
+<section class="step step-3">
+	<div class="container">
+		<h1 class="title">Виберіть процесор</h1>
+		<div class="content">
+			<div class="select-steps">
+				<a class="select-steps__item" href="#">Крок 1</a>
+				<a class="select-steps__item" href="#">Крок 2</a>
+				<a class="select-steps__item select-steps__item--active" href="#">Крок 3</a>
+				<a class="select-steps__item" href="#">Крок 4</a>	
+				<a class="select-steps__item" href="#">Результат</a>	
+			</div>
+			<div class="select-images">
+				<div class="select-images__inner">
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Intel Celeron</span>
+						<span class="price">1.000грн</span>
+						<input type="radio" name="cpu" value="Intel Celeron">
+						<div class="select-images__item"></div>
+					</label>
+					</div>
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Intel Pentium</span>
+						<span class="price">1.200грн</span>
+						<input type="radio" name="cpu" value="Intel Pentium">
+						<div class="select-images__item"></div>
+					</label>
+					</div>
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Intel Core i3</span>
+						<span class="price">1.500грн</span>
+						<input type="radio" name="cpu" value="Intel Core i3">
+						<div class="select-images__item"></div>
+					</label>	
+					</div>
+				</div>	
+
+				<div class="select-images__inner">
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">AMD Athlon</span>
+						<span class="price">2.000грн</span>
+						<input type="radio" name="cpu" value="AMD Athlon">
+						<div class="select-images__item"></div>
+					</label>
+					</div>
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Intel Core i5</span>
+						<span class="price">3.000грн</span>
+						<input type="radio" name="cpu" value="Intel Core i5">
+						<div class="select-images__item"></div>
+					</label>
+					</div>
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">AMD Ryzen 5</span>
+						<span class="price">4.000грн</span>
+						<input type="radio" name="cpu" value="AMD Ryzen 5">
+						<div class="select-images__item"></div>
+					</label>
+					</div>	
+				</div>
+
+				<div class="select-images__inner">
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Intel Core i7</span>
+						<span class="price">5.000грн</span>
+						<input type="radio" name="cpu" value="Intel Core i7">
+						<div class="select-images__item"></div>
+					</label>
+					</div>
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">AMD Ryzen 7</span>
+						<span class="price">5.000грн</span>
+						<input type="radio" name="cpu" value="AMD Ryzen 7">
+						<div class="select-images__item"></div>
+					</label>
+					</div>
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Intel Core i9</span>
+						<span class="price">6.000грн</span>
+						<input type="radio" name="cpu" value="Intel Core i9">
+						<div class="select-images__item"></div>
+					</label>
+					</div>	
+				</div>
+			</div>	
+		</div>	
+		<div class="buttons">
+			<a class="button button-prev" href="#">Попередній крок</a>
+			<a class="button button-next" href="#">Наступний крок</a>	
+		</div>
+	</div>
+</section>
+
+<section class="step step-4">
+	<div class="container">
+		<h1 class="title">Виберіть відеокарту</h1>
+		<div class="content">
+			<div class="select-steps">
+				<a class="select-steps__item" href="#">Крок 1</a>
+				<a class="select-steps__item" href="#">Крок 2</a>
+				<a class="select-steps__item" href="#">Крок 3</a>
+				<a class="select-steps__item select-steps__item--active" href="#">Крок 4</a>
+				<a class="select-steps__item" href="#">Результат</a>		
+			</div>
+			<div class="select-images">
+				<div class="select-images__inner">
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">AMD Radeon Vega</span>
+						<span class="price">1.000грн</span>
+						<input type="radio" name="graphics-card" value="AMD Radeon Vega">
+						<div class="select-images__item"></div>
+					</label>
+					</div>
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Ge Force GT</span>
+						<span class="price">1.200грн</span>
+						<input type="radio" name="graphics-card" value="Ge Force GT">
+						<div class="select-images__item"></div>
+					</label>
+					</div>
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Intel HD Graphics</span>
+						<span class="price">1.500грн</span>
+						<input type="radio" name="graphics-card" value="Intel HD Graphics">
+						<div class="select-images__item"></div>
+					</label>
+					</div>	
+				</div>
+
+				<div class="select-images__inner">
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Ge Force GTX 1050</span>
+						<span class="price">2.000грн</span>
+						<input type="radio" name="graphics-card" value="Ge Force GTX 1050">
+						<div class="select-images__item"></div>
+					</label>
+					</div>
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Ge Force GTX 1060</span>
+						<span class="price">3.000грн</span>
+						<input type="radio" name="graphics-card" value="Ge Force GTX 1060">
+						<div class="select-images__item"></div>
+					</label>
+					</div>
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Ge Force GTX 1650</span>
+						<span class="price">4.000грн</span>
+						<input type="radio" name="graphics-card" value="Ge Force GTX 1650">
+						<div class="select-images__item"></div>
+					</label>
+					</div>	
+				</div>
+
+				<div class="select-images__inner">
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Ge Force GTX 1660</span>
+						<span class="price">6.000грн</span>
+						<input type="radio" name="graphics-card" value="Ge Force GTX 1660">
+						<div class="select-images__item"></div>
+					</label>
+					</div>
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Ge Force GTX 1660 Super</span>
+						<span class="price">8.000грн</span>
+						<input type="radio" name="graphics-card" value="Ge Force GTX 1660 Super">
+						<div class="select-images__item"></div>
+					</label>
+					</div>
+					<div class="select-images__inner-item">
+					<label>
+						<span class="value">Ge Force GTX 1660 Ti</span>
+						<span class="price">10.000грн</span>
+						<input type="radio" name="graphics-card" value="Ge Force GTX 1660 Ti">
+						<div class="select-images__item"></div>
+					</label>
+					</div>	
+				</div>	
+			</div>	
+		</div>	
+		<div class="buttons">
+			<a class="button button-prev" href="#">Попередній крок</a>
+			<a class="button button-next" href="#">Наступний крок</a>	
+		</div>
+	</div>
+</section>
+
+<section class="step step-final">
+	<div class="container">
+		<h1 class="title">Ваш комп'ютер</h1>
+		<div class="content">
+			<div class="select-steps">
+				<a class="select-steps__item" href="#">Крок 1</a>
+				<a class="select-steps__item" href="#">Крок 2</a>
+				<a class="select-steps__item" href="#">Крок 3</a>
+				<a class="select-steps__item" href="#">Крок 4</a>
+				<a class="select-steps__item select-steps__item--active" href="#">Результат</a>		
+			</div>
+			<div class="result">
+				<div class="result-nout">
+					<div class="result-nout__inner">
+						<div class="result__item">
+							<img src="images/nout-do-10.jpg" alt="nout">	
+							<p class="cpu-result">Процесор: <span class="cpu-result__inner"></span></p>
+							<p class="graphics-card-result">Відеокарта: <span class="graphics-card-result__inner"></span></p>
+						</div>
+					</div>
+					<div class="result-nout__inner">
+						<div class="result__item">
+							<img src="images/nout-do-20.jpg" alt="nout">
+							<p class="cpu-result">Процесор: <span class="cpu-result__inner"></span></p>
+							<p class="graphics-card-result">Відеокарта: <span class="graphics-card-result__inner"></span></p>
+						</div>
+					</div>
+					<div class="result-nout__inner">
+						<div class="result__item">
+							<img src="images/nout-20-plus.jpg" alt="nout">	
+							<p class="cpu-result">Процесор: <span class="cpu-result__inner"></span></p>
+							<p class="graphics-card-result">Відеокарта: <span class="graphics-card-result__inner"></span></p>
+						</div>
+					</div>
+				</div>
+				<div class="result-pc">
+					<div class="result-pc__inner">
+						<div class="result__item">
+							<img src="images/pc-do-10.jpg" alt="pc">
+							<p class="cpu-result">Процесор: <span class="cpu-result__inner"></span></p>
+							<p class="graphics-card-result">Відеокарта: <span class="graphics-card-result__inner"></span></p>
+						</div>
+					</div>
+					<div class="result-pc__inner">
+						<div class="result__item">
+							<img src="images/pc-do-20.jpg" alt="pc">
+							<p class="cpu-result">Процесор: <span class="cpu-result__inner"></span></p>
+							<p class="graphics-card-result">Відеокарта: <span class="graphics-card-result__inner"></span></p>
+						</div>
+					</div>
+					<div class="result-pc__inner">
+						<div class="result__item">
+							<img src="images/pc-20-plus.jpg" alt="pc">	
+							<p class="cpu-result">Процесор: <span class="cpu-result__inner"></span></p>
+							<p class="graphics-card-result">Відеокарта: <span class="graphics-card-result__inner"></span></p>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</div>
+		<div class="buttons">
+			<a class="button button-prev" href="#">Попередній крок</a>	
+		</div>	
+	</div>
+</section>
+
+<script src="js/script.js"></script>	
+</body>
+</html>
