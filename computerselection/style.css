@@ -1,0 +1,153 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+button {
+  background: #00bfff;
+  border: 1px solid #00bfff;
+  margin: 0px 20px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+input[type='range']{
+  width: 250px;
+}
+label > input {
+  /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > span {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-family: cursive;
+}
+label > input + img {
+  /* IMAGE STYLES */
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+label > input:checked + img {
+  filter: drop-shadow(0px 0px 20px #00bfff);
+  transform: scale(1.2);
+  transition: all 1s;
+}
+label > input + img {
+  transition: all 1s;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.steps-navigator {
+  float: left;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.steps_content{
+  width: 100%;
+}
+.select-steps__item {
+  border: 1px solid #00bfff;
+  background: #00bfff;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+}
+.step-title {
+  background: #00bfff;
+  justify-content: center;
+  font-size: 35px;
+  padding: 30px 0px;
+  color: #fff;
+  display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.select {
+  background: #00bfff;
+  transform: scale(1.1);
+}
+.active {
+  background: #00bfff;
+  transform: scale(1.1);
+  filter: drop-shadow(2px 4px 6px black);
+}
+.hdd_1 {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  width: 60%;
+}
+.hdd_1 label{
+  margin: 20px;
+}
+
+.line_next_steps {
+  height: 15px;
+  width: 2px;
+  background: #000;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.step img {
+  max-width: 200px;
+  width: 100%;
+  margin: 50px;
+}
+.step-2,.step-3,.step-1,.step-4,.step-5,.step-6,.step-7,.result {
+  display: none;
+}
+div.select-steps__item ~ .select-steps__item {
+  filter: blur(1px);
+}
+
+.back-steps {
+  display: none;
+}
+.result-info{
+  font-size: 2vw;
+}
+.type_mothers{
+  display: flex;
+    align-items: baseline;
+}
+.type_corp{
+  display: flex;
+  align-items: baseline;
+}
+.type_corp label img{
+  max-width: 120px;
+width: 100%;
+}
+.step-select-item{
+  display: flex;
+    justify-content: center;
+    margin: 60px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
